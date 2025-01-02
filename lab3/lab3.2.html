@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe2</title>
+</head>
+<body>
+    <p id="output"></p>
+
+    <script>
+        // Prompt the user to enter the colors, separated by commas
+        let input = prompt("Please Enter the colors :"); //trv tah dak input jol ber pot dak te vea ot jenh output yg te
+
+        // Split the input string into an array of colors
+        let myColor = input.split(",").map(color => color.trim());
+
+        // Join the array elements into a string
+        let result = myColor.join(",");
+
+        // Display the result in the paragraph & Its a function that we need to use
+        document.getElementById("output").innerText = result;
+    </script>
+</body>
+</html>
+

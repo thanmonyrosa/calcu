@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Based Greeting</title>
+</head>
+<body>
+    <script>
+        function displayGreeting() {
+            // Prompt for user's name
+            let userName = prompt("Please enter your name:");
+
+            // Get the current time
+            const d = new Date();
+            const hour = d.getHours();
+            let greeting; // tang variable ah ng peak kur sorm gm gn
+
+            // Determine the greeting based on the time of day
+            if (hour < 12) {
+                greeting = "Good Morning";
+            } else if (hour < 18) {
+                greeting = "Good Afternoon";
+            } else {
+                greeting = "Good Evening";
+            }
+
+            // Display the greeting with the user's name
+            alert(greeting + ", " + userName + "<3");
+        }
+
+        // Call the function immediately when the page loads
+        displayGreeting();
+    </script>
+</body>
+</html>

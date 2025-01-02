@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe1</title>
+</head>
+<body>
+    <script> 
+    let continueChecking = true; // oy vea loop alert lhot tal yg joj cancel ban chop alert
+    while (continueChecking) {   //
+    year = parseInt(prompt("Enter a year to check if it's a leap year or not:"));
+            if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+                alert(year + " is a leap year.");
+            } else {
+                alert(year + " is not a leap year.");
+            }
+            continueChecking = confirm("Do you want to check another year?"); // break vea lort jenh jea cnacel or confirm tha yg jg  chevk tt or ot
+        }
+    </script>
+</body>
+</html>
+

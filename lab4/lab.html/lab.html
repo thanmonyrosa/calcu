@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body>
+        <style>
+            h1 {
+            color: #b10e8b;
+            }
+            p {
+            color: #cf09a1; 
+        }
+        a {
+            color: rgba(207, 9, 161, 0.5); 
+            text-decoration: none; 
+        }
+        a:hover {
+            color: #cf09a1; 
+        }
+            button {
+                display: block;
+                margin: 0px;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: white;
+                background-color: #cf09a1;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #b10e8b;
+            }
+            table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            }
+            th, td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #510202;
+            }
+            th {
+            color: #e042c3;
+            }
+        </style>
+    </head>
+        <div class="container">
+            <h1>Generate IP GEO</h1>
+            <p>Url to API: <a href="https://ipinfo.io/geo" target="_blank">https://ipinfo.io/geo</a></p>
+            <p>Method: GET</p>
+            <button id="generate">Generate</button>
+        </div>
+        <table>
+            <tr>
+                <th>IP</th>
+                <td id="ip"></td>
+            </tr>
+            <tr>
+                <th>City</th>
+                <td id="city"></td>
+            </tr>
+            <tr>
+                <th>Latitude</th>
+                <td id="latitude"></td>
+            </tr>
+            <tr>
+                <th>Longitude</th>
+                <td id="longitude"></td>
+            </tr>
+            <tr>
+                <th>Timezone</th>
+                <td id="timezone"></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+
+    </script>
+    </body>
+    </html>
